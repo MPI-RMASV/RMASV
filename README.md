@@ -6,9 +6,9 @@ RMASV is a symbolic-verification tool for MPI one-sided communication. It record
 
 ## Requirements
 
-- Linux host with Docker installed
-- At least 32 GB memory recommended
-- At least 50 GB free disk space recommended
+- At least 32 GB memory and 50 GB free disk space
+- Unix / Linux OS: We have validated the artifact on Ubuntu system
+- [Docker](https://www.docker.com/)
 
 The full experiments may take a long time. Quick scripts are provided for checking the environment and inspecting representative results first.
 
@@ -20,7 +20,7 @@ The experiments use a per-case timeout of 600 seconds for RQ1/RQ3 and 900 second
 
 ## Getting the Artifact
 
-Pull the Docker image:
+Pull the Docker image from [DockerHub](https://hub.docker.com/repository/docker/mpirma/rmasv):
 
 ```bash
 docker pull mpirma/rmasv:latest
