@@ -97,7 +97,7 @@ bash RMASV_result.sh
 cat RMASV_result.csv
 ```
 
-The CSV contains the benchmark label, process count, verification result, exit code, runtime, iteration count, detected conflict scope when available, and paths to detailed logs.
+The CSV contains the benchmark label, process count, verification result, exit code, runtime, iteration count, detected conflict scope/type when available, and paths to detailed logs. An iteration count of `0` can occur when RMASV reports a data race during symbolic execution before entering the CSP-guided verification loop. In that case, the race report and conflict type are the relevant outputs.
 
 ![RQ1 result](fig/rq1-bench.png)
 
