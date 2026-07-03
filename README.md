@@ -97,7 +97,7 @@ bash RMASV_result.sh
 cat RMASV_result.csv
 ```
 
-The CSV contains the benchmark label, process count, verification result, exit code, runtime, iteration count, and paths to detailed logs.
+The CSV contains the benchmark label, process count, verification result, exit code, runtime, iteration count, detected conflict scope when available, and paths to detailed logs.
 
 ![RQ1 result](fig/rq1-bench.png)
 
@@ -129,7 +129,7 @@ bash RMASV_result.sh
 cat RMASV_result.csv
 ```
 
-The generated CSV reports the mode (`SV`, `SEF`, or `SEI`), benchmark label, process count, result, runtime, and iteration count.
+The generated CSV reports the mode (`SV`, `SEF`, or `SEI`), benchmark label, process count, assertion-checking target, result, runtime, iteration count, and log paths. For assertion checks, the `buchi_log` column points to the generated Büchi automaton when the tool emits one.
 
 The full RQ2 run is substantially longer than the quick script because it runs all RQ2 benchmarks once under all three modes. Based on our evaluation runs, a complete RQ2 run is expected to take roughly 45--60 minutes on a typical desktop or workstation; slower machines, constrained Docker settings, or emulated execution may take longer. In the worst case, the runtime is bounded by the per-case timeout configured in the artifact scripts. We recommend running `RMASV_result_quick.sh` first to confirm the environment before starting the full RQ2 run.
 
@@ -147,7 +147,7 @@ bash RMASV_result.sh
 cat RMASV_result.csv
 ```
 
-The generated CSV reports each LTL property, the expected verification outcome, the observed result, runtime, and log paths.
+The generated CSV reports each LTL property file, the LTL formula, the observed result, runtime, and log paths. The `buchi_log` column points to the generated Büchi automaton in `never { ... }` format.
 
 ![RQ3 result](./fig/rq3.png)
 
@@ -182,7 +182,7 @@ RQ2/RMASV_result.csv
 RQ3/RMASV_result.csv
 ```
 
-Detailed per-case logs are stored under `results/`. Each CSV row includes the corresponding `run.log` and `raw.log` paths.
+Detailed per-case logs are stored under `results/`. Each CSV row includes the corresponding `run.log` and `raw.log` paths. When available, the CSV also includes the checked formula, race conflict scope/type, and a `buchi_log` path containing the generated `never { ... }` automaton.
 
 ## Troubleshooting
 
