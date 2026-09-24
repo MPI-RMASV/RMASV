@@ -73,8 +73,6 @@ The script writes:
 Motivation/RMASV_motivation.csv
 ```
 
-Screenshot placeholder:
-
 ![Motivating example result](fig/motivation.png)
 
 ## RQ1: RMA Data-Race Detection
