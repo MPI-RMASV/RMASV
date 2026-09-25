@@ -1,0 +1,6 @@
+case,scenario,RMASanitizer_reports,RMASanitizer_trials,RMASV_reported,RMASV_conflict_type
+01-put-origin,Put origin-buffer overwrite,3,10,yes,LOCAL_STORE---PUT
+02-get-result,Get result-buffer overwrite,3,10,yes,LOCAL_STORE---GET
+03-put-put,Concurrent Put-Put,2,10,yes,PUT---PUT
+04-put-get,Concurrent Put-Get,1,10,yes,GET---PUT
+05-put-target-store,Put-target local store,3,10,yes,RMA_STORE---PUT
