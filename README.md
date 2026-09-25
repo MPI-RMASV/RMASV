@@ -189,3 +189,7 @@ If a full experiment takes too long, run the corresponding quick script first.
 If a script fails, inspect the `run.log` and `raw.log` paths listed in the generated CSV.
 
 Timing may vary across machines; small runtime differences are expected.
+
+## Additional External-Tool Comparison Results
+
+The head-to-head comparison with MUST-RMA and RMASanitizer, including the 69-case RMARaceBench results and five nondeterministic message-matching examples, is available in [additional_external_comparison](additional_external_comparison/).
