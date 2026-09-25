@@ -1,4 +1,0 @@
-tool,cases,TP,TN,FP,FN,correct,accuracy,total_wall_seconds,mean_wall_seconds_per_case,timing_note
-RMASV,69,40,29,0,0,69,1.0000,417.43,6.05,native RMASV run; compile+analysis
-MUST-RMA,69,36,28,1,4,64,0.9275,269.70,3.91,Docker run; compile+dynamic analysis
-RMASanitizer,69,40,29,0,0,69,1.0000,277.67,4.02,Docker run; compile+dynamic analysis
