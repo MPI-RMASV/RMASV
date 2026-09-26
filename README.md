@@ -192,4 +192,4 @@ Timing may vary across machines; small runtime differences are expected.
 
 ## Additional External-Tool Comparison Results
 
-The head-to-head comparison with MUST-RMA and RMASanitizer, including the 69-case RMARaceBench results and five nondeterministic message-matching examples, is available in [additional_external_comparison](additional_external_comparison/).
+The head-to-head comparison with MUST-RMA and RMASanitizer, including the 69-case RMARaceBench results, five input-sensitive and five input-sensitive examples, is available in [additional_external_comparison](additional_external_comparison/).
