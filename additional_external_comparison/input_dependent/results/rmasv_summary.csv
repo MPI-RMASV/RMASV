@@ -1,0 +1,6 @@
+case,repeats,races_found,mean_wall_seconds,conflict_type
+01-put-origin,5,5,6.39,LOCAL_STORE---PUT
+02-get-result,5,5,6.59,LOCAL_STORE---GET
+03-put-put,5,5,6.40,PUT---PUT
+04-put-get,5,5,6.59,PUT---GET
+05-put-target-store,5,5,6.72,PUT---RMA_STORE

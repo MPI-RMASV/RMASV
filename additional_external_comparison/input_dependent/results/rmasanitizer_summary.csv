@@ -1,0 +1,11 @@
+case,input,runs,races_reported,mean_wall_seconds
+01-put-origin,0,5,0,3.15
+01-put-origin,1,5,5,3.02
+02-get-result,0,5,0,2.79
+02-get-result,1,5,5,3.08
+03-put-put,0,5,0,2.75
+03-put-put,1,5,5,3.61
+04-put-get,0,5,0,2.50
+04-put-get,1,5,5,3.35
+05-put-target-store,0,5,0,2.81
+05-put-target-store,1,5,5,3.29

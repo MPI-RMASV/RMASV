@@ -1,0 +1,6 @@
+case,conflict_type,rmasanitizer_reports,rmasanitizer_runs,rmasanitizer_mean_seconds,rmasv_reports,rmasv_runs,rmasv_mean_seconds
+01-put-origin,LOCAL_STORE---PUT,2,10,4.44,5,5,7.26
+02-get-result,LOCAL_STORE---GET,5,10,3.21,5,5,7.00
+03-put-put,PUT---PUT,5,10,3.13,5,5,7.04
+04-put-get,GET---PUT,3,10,3.31,5,5,7.59
+05-put-target-store,RMA_STORE---PUT,2,10,3.01,5,5,6.90
